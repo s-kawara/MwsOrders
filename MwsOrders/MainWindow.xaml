@@ -1,0 +1,125 @@
+﻿<Window x:Class="MwsOrders.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl>
+            <TabItem Header="ListOrders">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnListOrders"
+                            Content="注文一覧取得"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnListOrders_Click"
+                            />
+                    <TextBlock x:Name="txtListOrders"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="ListOrderByNextToken">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnListOrderByNextToken"
+                            Content="次の注文一覧取得"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnListOrderByNextToken_Click"
+                            />
+                    <TextBlock x:Name="txtListOrderByNextToken"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetOrder">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnGetOrder"
+                            Content="注文詳細取得"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnGetOrder_Click"
+                            />
+                    <TextBlock x:Name="txtGetOrder"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"
+                               />
+                </Grid>
+            </TabItem>
+            <TabItem Header="LIstOrderItems">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnLIstOrderItems"
+                            Content="注文アイテム取得"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnLIstOrderItems_Click"
+                            />
+                    <TextBlock x:Name="txtLIstOrderItems"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"
+                               />
+                </Grid>
+            </TabItem>
+            <TabItem Header="ListOrderItemsByNextToken">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnListOrderItemsByNextToken"
+                            Content="次の注文アイテム取得"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnListOrderItemsByNextToken_Click"
+                            />
+                    <TextBlock x:Name="txtListOrderItemsByNextToken"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="GetServiceStatus">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btnGetServiceStatus"
+                            Content="サービス状態"
+                            Width="120"
+                            Height="25"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="10 10 0 0"
+                            Click="btnGetServiceStatus_Click"
+                            />
+                    <TextBlock x:Name="txtGetServiceStatus"
+                               Width="250"
+                               Height="200"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Margin="200 10 0 0"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
